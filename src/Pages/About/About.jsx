@@ -3,6 +3,8 @@ import journeyAnimation from '../../../public/animation/journey.json';
 import skillsAnimation from '../../../public/animation/skills.json';
 import projectsAnimation from '../../../public/animation/projects.json';
 import Lottie from 'react-lottie';
+import { motion } from 'framer-motion';
+
 
 const About = () => {
 
@@ -19,7 +21,29 @@ const About = () => {
 
     return (
         <div className='w-11/12 md:w-2/3 mx-auto'>
-            <h1 className='text-3xl font-bold text-center m-8 underline decoration-wavy  decoration-cyan-500'>About Me</h1>
+
+            <section >
+                <div className="py-3 text-center">
+                    <motion.h2
+                        className="text-4xl font-bold mb-6"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        About Me
+                    </motion.h2>
+                    <motion.p
+                        className="max-w-2xl mx-auto  leading-relaxed text-justify"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        I'm a passionate web developer with a background in Petroleum and Mining Engineering. My focus is on creating
+                        innovative web solutions using the latest technologies like React, Tailwind, Node, and MongoDB.
+                    </motion.p>
+                </div>
+            </section>
+
             <section >
                 {/* My Journey Section */}
                 <div className="md:flex md:flex-row-reverse justify-center items-center gap-6">

@@ -1,5 +1,7 @@
 import React from 'react';
 import "./experience.css"
+import { motion } from 'framer-motion';
+
 const experienceData = [
     {
         title: 'Industrial Trainee',
@@ -26,7 +28,26 @@ const Experience = () => {
         <div className="w-11/12 md:w-2/3 mx-auto">
             {/* Experience Section */}
             <div className="mb-10">
-                <h2 className="text-3xl font-bold text-center m-8 underline decoration-wavy  decoration-cyan-500">Work Experience</h2>
+                <section >
+                    <div className="py-3 text-center">
+                        <motion.h2
+                            className="text-4xl font-bold mb-6"
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            My Experience
+                        </motion.h2>
+                        <motion.p
+                            className="max-w-2xl mx-auto  leading-relaxed text-justify"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            Over the years, I’ve had the opportunity to work on various projects, collaborate with skilled teams, and learn from every experience. From building custom solutions for clients to contributing to open-source projects, my work experience has helped me develop a strong understanding of the web development landscape. I continue to grow with every new challenge.
+                        </motion.p>
+                    </div>
+                </section>
                 <div className="relative">
                     {/* Centered vertical bar */}
                     <div className="timeline-bar"></div>
@@ -40,7 +61,7 @@ const Experience = () => {
                                 <div className="timeline-circle"></div>
 
                                 {/* Experience Text (Alternating sides on large devices) */}
-                                <div className={`relative w-full ml-4 md:ml-0 lg:max-w-md px-4 ${index % 2 === 0 ? 'lg:text-left lg:pr-16' : 'lg:text-right lg:pl-16'}`}>
+                                <div className={`relative timeline_text w-full ml-4 md:ml-0 lg:max-w-md px-4 ${index % 2 === 0 ? 'lg:text-left lg:pr-16' : 'lg:text-right lg:pl-16'}`}>
                                     <h3 className="text-xl font-semibold">{experience.title}</h3>
                                     <p className="text-gray-600">{experience.company}</p>
                                     <p className="text-gray-400">{experience.date}</p>
@@ -54,7 +75,26 @@ const Experience = () => {
 
             {/* Thesis Section */}
             <div>
-                <h2 className="text-3xl font-bold text-center m-8 underline decoration-wavy  decoration-cyan-500">Academic Thesis</h2>
+                <section >
+                    <div className="py-3 text-center">
+                        <motion.h2
+                            className="text-4xl font-bold mb-6"
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            Academic Thesis
+                        </motion.h2>
+                        <motion.p
+                            className="max-w-2xl mx-auto  leading-relaxed text-justify"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            My academic background in Petroleum and Mining Engineering allowed me to dive into cutting edge research, where I explored innovative solutions in the field. My thesis involved rigorous analysis and practical applications, helping me sharpen my analytical and problem solving skills that I now bring to the world of web development.
+                        </motion.p>
+                    </div>
+                </section>
                 <div className="p-4 bg-white shadow rounded-lg">
                     <h3 className="text-xl font-semibold mb-2">Thesis Title</h3>
                     <p className="text-gray-600 mb-2">Description of the thesis. A brief overview of the research, findings, and significance.</p>

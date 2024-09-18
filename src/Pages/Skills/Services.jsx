@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCode, FaMobileAlt, FaPalette, FaBug, FaCheckCircle } from 'react-icons/fa';
-import { SiReact, SiTailwindcss } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const services = [
     { id: 1, icon: <FaCode className="text-4xl text-teal-600" />, title: 'Web Development', description: 'Building robust and dynamic web applications with modern technologies like React, Node.js, and more.' },
@@ -16,7 +16,26 @@ const Services = () => {
     return (
         <section className="py-12">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8 underline decoration-wavy  decoration-cyan-500">My Services</h2>
+                <section >
+                    <div className="py-3 text-center">
+                        <motion.h2
+                            className="text-4xl font-bold mb-6"
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            My Service
+                        </motion.h2>
+                        <motion.p
+                            className="max-w-2xl mx-auto  leading-relaxed text-justify"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            I offer a broad range of web development services tailored to meet your project needs. Whether you're looking for a highly functional website, a responsive design, or fixing bugs to improve performance, I’m here to deliver. My goal is to build websites that not only look great but are also easy to use and maintain, ensuring a smooth experience for both users and administrators.
+                        </motion.p>
+                    </div>
+                </section>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                     {services.map(service => (
                         <div key={service.id} className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transition-transform transform hover:scale-105">

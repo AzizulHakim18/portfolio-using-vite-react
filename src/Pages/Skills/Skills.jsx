@@ -4,7 +4,7 @@ import { SiTailwindcss, SiDaisyui, SiExpress } from 'react-icons/si';
 import { AiFillApi } from 'react-icons/ai';
 import Services from './Services';
 import { IoLogoFirebase } from 'react-icons/io5';
-
+import { motion } from 'framer-motion';
 
 const skills = [
     { id: 1, icon: <FaHtml5 className="text-4xl text-orange-600 animate-bounce" />, name: 'HTML', description: 'Experienced in creating structured and semantic HTML documents to ensure proper document structure and SEO optimization.' },
@@ -26,7 +26,26 @@ const Skills = () => {
         <div className='w-11/12 md:w-2/3 mx-auto'>
             <section className="py-12">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-8 underline decoration-wavy  decoration-cyan-500 ">My Expertise</h2>
+                    <section >
+                        <div className="py-3 text-center">
+                            <motion.h2
+                                className="text-4xl font-bold mb-6"
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                My Expertise
+                            </motion.h2>
+                            <motion.p
+                                className="max-w-2xl mx-auto  leading-relaxed text-justify"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                With hands on experience in full-stack development, I specialize in crafting dynamic and efficient web applications. My expertise ranges from frontend frameworks to backend technologies, and I ensure every project I work on is fast, responsive, and user-friendly. From performance optimization to creating accessible designs, I strive for excellence in every line of code.
+                            </motion.p>
+                        </div>
+                    </section>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
                         {skills.map(skill => (
                             <div key={skill.id} className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transition-transform transform hover:scale-105">
