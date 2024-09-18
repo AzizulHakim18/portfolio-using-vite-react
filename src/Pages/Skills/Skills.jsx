@@ -1,26 +1,48 @@
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaBootstrap } from 'react-icons/fa';
+import { SiTailwindcss, SiDaisyui, SiExpress } from 'react-icons/si';
+import { AiFillApi } from 'react-icons/ai';
+import Services from './Services';
+import { IoLogoFirebase } from 'react-icons/io5';
+
+
+const skills = [
+    { id: 1, icon: <FaHtml5 className="text-4xl text-orange-600 animate-bounce" />, name: 'HTML', description: 'Experienced in creating structured and semantic HTML documents to ensure proper document structure and SEO optimization.' },
+    { id: 2, icon: <FaCss3Alt className="text-4xl text-blue-600 animate-bounce" />, name: 'CSS', description: 'Proficient in styling and designing responsive layouts using modern CSS techniques, including Flexbox and Grid.' },
+    { id: 3, icon: <FaBootstrap className="text-4xl text-primary animate-bounce" />, name: 'Bootstrap', description: 'Experienced in utilizing Bootstrap for building responsive layouts and components with a focus on speed and ease of use.' },
+    { id: 4, icon: <SiTailwindcss className="text-4xl text-blue-600 animate-bounce" />, name: 'Tailwind CSS', description: 'Proficient in using Tailwind CSS for utility-first styling and building responsive and customizable UI components.' },
+    { id: 5, icon: <FaJs className="text-4xl text-yellow-500 animate-bounce" />, name: 'JavaScript', description: 'Skilled in writing dynamic and interactive web applications with JavaScript, including ES6+ features and asynchronous programming.' },
+    { id: 6, icon: <FaReact className="text-4xl text-blue-400 animate-bounce" />, name: 'React', description: 'Experienced in building user interfaces and single-page applications using React, including hooks, context API, and state management.' },
+    { id: 7, icon: <SiDaisyui className="text-4xl text-emerald-600 animate-bounce" />, name: 'Daisy UI', description: 'Skilled in using Daisy UI for component-based styling and creating aesthetically pleasing and responsive designs.' },
+    { id: 8, icon: <IoLogoFirebase className="text-4xl text-yellow-400 animate-bounce" />, name: 'Firebase', description: 'Proficient in using Firebase for authentication, real-time databases, and cloud functions to enhance web applications.' },
+    { id: 9, icon: <FaNodeJs className="text-4xl text-green-600 animate-bounce" />, name: 'Node.js', description: 'Knowledgeable in server-side development and API integration with Node.js, including creating RESTful services and middleware.' },
+    { id: 10, icon: <FaDatabase className="text-4xl text-teal-500 animate-bounce" />, name: 'MongoDB', description: 'Experienced in designing and managing NoSQL databases with MongoDB, including schema design and data modeling.' },
+    { id: 11, icon: <SiExpress className="text-4xl text-gray-600 animate-bounce" />, name: 'Express.js', description: 'Experienced in building server-side applications and APIs using Express.js, including middleware and routing.' },
+    { id: 12, icon: <AiFillApi className="text-4xl text-red-500 animate-bounce" />, name: 'APIs', description: 'Skilled in designing and integrating APIs, ensuring seamless communication between front-end and back-end services.' },
+];
 
 const Skills = () => {
     return (
-        <section className="bg-[#3E606F] text-white py-16">
-            <div className="container mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-8">My Skills</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="card hover:bg-teal-300 transition duration-200 ease-in-out p-6">
-                        <h3 className="text-2xl font-semibold mb-4">JavaScript</h3>
-                        <p className="text-lg">Experienced in building complex front-end interactions and dynamic web apps.</p>
-                    </div>
-                    <div className="card hover:bg-teal-300 transition duration-200 ease-in-out p-6">
-                        <h3 className="text-2xl font-semibold mb-4">React.js</h3>
-                        <p className="text-lg">Expert in creating component-based architecture and scalable React applications.</p>
-                    </div>
-                    <div className="card hover:bg-teal-300 transition duration-200 ease-in-out p-6">
-                        <h3 className="text-2xl font-semibold mb-4">Node.js</h3>
-                        <p className="text-lg">Backend experience with building RESTful APIs and handling server-side logic.</p>
+        <div className='w-11/12 md:w-2/3 mx-auto'>
+            <section className="py-12">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center mb-8 underline decoration-wavy  decoration-cyan-500 ">My Expertise</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
+                        {skills.map(skill => (
+                            <div key={skill.id} className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                                <div className="mb-4">
+                                    {skill.icon}
+                                </div>
+                                <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
+                                <p className="text-gray-600">{skill.description}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <Services></Services>
+        </div>
 
     );
 };

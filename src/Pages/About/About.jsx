@@ -19,10 +19,10 @@ const About = () => {
 
     return (
         <div className='w-11/12 md:w-2/3 mx-auto'>
-            <h1 className='text-xl md:text-2xl lg:text-3xl font-bold text-center py-10 underline decoration-wavy  decoration-cyan-500'>About Me</h1>
+            <h1 className='text-3xl font-bold text-center m-8 underline decoration-wavy  decoration-cyan-500'>About Me</h1>
             <section >
                 {/* My Journey Section */}
-                <div className="md:flex md:flex-row-reverse justify-center items-center gap-6 py-20">
+                <div className="md:flex md:flex-row-reverse justify-center items-center gap-6">
                     <div className="md:w-1/2 ">
                         <Lottie options={defaultOptions(journeyAnimation)} height={300} width={300} />
                     </div>
@@ -40,7 +40,7 @@ const About = () => {
                 </div>
 
                 {/* Skills & Expertise Section */}
-                <div className="md:flex justify-center items-center gap-10 mb-16">
+                <div className="md:flex justify-center items-center gap-10">
                     {/* Animation First on Large, Text First on Small */}
                     <div className="md:w-1/2">
                         <Lottie options={defaultOptions(skillsAnimation)} height={300} width={300} />
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
 
                 {/* Projects & Accomplishments Section */}
-                <div className="md:flex md:flex-row-reverse justify-center items-center gap-6 py-20">
+                <div className="md:flex md:flex-row-reverse justify-center items-center gap-6">
                     <div className="md:w-1/2 ">
                         <Lottie options={defaultOptions(projectsAnimation)} height={300} width={300} />
                     </div>
