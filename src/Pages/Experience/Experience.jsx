@@ -4,10 +4,22 @@ import { motion } from 'framer-motion';
 
 const experienceData = [
     {
+        title: 'Internship',
+        company: 'CodeAlpha',
+        date: 'Sep 15, 2024 - Oct 15, 2024',
+        description: 'Gained insights into LPG storage, HSE practices, and transmission and distribution processes in the energy industry.',
+    },
+    {
+        title: 'Customer Service',
+        company: 'Hana Store',
+        date: 'Nov 18, 2023 - Apr 30, 2024',
+        description: 'Gained insights into LPG storage, HSE practices, and transmission and distribution processes in the energy industry.',
+    },
+    {
         title: 'Industrial Trainee',
-        company: 'Titas Gas Field, BGFCL',
-        date: 'Feb 27, 2021 - Mar 03, 2021',
-        description: 'Gained hands-on experience in oil field operations, production, technical processes, and workover optimization.',
+        company: 'BM Energy LTD',
+        date: 'Mar 06, 2021 - Mar 12, 2021',
+        description: 'Gained insights into LPG storage, HSE practices, and transmission and distribution processes in the energy industry.',
     },
     {
         title: 'Industrial Trainee',
@@ -15,11 +27,12 @@ const experienceData = [
         date: 'Mar 14, 2021 - Mar 21, 2021',
         description: 'Gained insights into the regulation of gas, electricity, and petroleum pricing and policies.',
     },
+
     {
         title: 'Industrial Trainee',
-        company: 'BM Energy LTD',
-        date: 'Mar 06, 2021 - Mar 12, 2021',
-        description: 'Gained insights into LPG storage, HSE practices, and transmission and distribution processes in the energy industry.',
+        company: 'Titas Gas Field, BGFCL',
+        date: 'Feb 27, 2021 - Mar 03, 2021',
+        description: 'Gained hands-on experience in oil field operations, production, technical processes, and workover optimization.',
     },
 ];
 

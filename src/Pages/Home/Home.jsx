@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className='w-11/12 md:w-2/3 mx-auto'>
-            <section className="md:flex md:flex-row-reverse justify-center items-center gap-6 py-20 ">
+            <section className="md:flex md:flex-row-reverse justify-center items-center gap-6 py-8 ">
 
                 {/* Profile Picture */}
                 <div className="relative flex justify-center lg:justify-end mb-8 md:mb-0">
@@ -30,10 +30,10 @@ const Home = () => {
 
                     {/* Social Icons */}
                     <div className="flex justify-center lg:justify-start space-x-4 mt-4">
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-cyan-500 p-2 hover:bg-cyan-500 hover:text-white shadow-lg hover:shadow-cyan-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaLinkedin /></Link>
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-cyan-500 p-2 hover:bg-cyan-500 hover:text-white shadow-lg hover:shadow-cyan-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><IoLogoGithub /></Link>
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-cyan-500 p-2 hover:bg-cyan-500 hover:text-white shadow-lg hover:shadow-cyan-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaFacebook /></Link>
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-cyan-500 p-2 hover:bg-cyan-500 hover:text-white shadow-lg hover:shadow-cyan-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaInstagram /></Link>
+                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaLinkedin /></Link>
+                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><IoLogoGithub /></Link>
+                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaFacebook /></Link>
+                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaInstagram /></Link>
                     </div>
                 </div>
 
