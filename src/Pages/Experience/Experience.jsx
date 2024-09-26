@@ -7,13 +7,13 @@ const experienceData = [
         title: 'Internship',
         company: 'CodeAlpha',
         date: 'Sep 15, 2024 - Oct 15, 2024',
-        description: 'Gained insights into LPG storage, HSE practices, and transmission and distribution processes in the energy industry.',
+        description: 'During this Internship, I gained hands-on experience working on real-world projects, enhancing my skills in React, JavaScript, and responsive design. The internship focused on skill-building and applying concepts through practical tasks. I followed industry best practices, collaborated with team members, and delivered high-quality work under tight deadlines, all of which helped me grow both technically and professionally. This experience further solidified my passion for web development.',
     },
     {
         title: 'Customer Service',
         company: 'Hana Store',
         date: 'Nov 18, 2023 - Apr 30, 2024',
-        description: 'Gained insights into LPG storage, HSE practices, and transmission and distribution processes in the energy industry.',
+        description: 'I handled client inquiries, resolved order issues, and ensured smooth communication between suppliers and customers. This role helped me develop strong problem-solving and interpersonal skills, as well as the ability to manage customer expectations in a fast-paced environment. It also gave me valuable insight into e-commerce operations and customer relationship management.',
     },
     {
         title: 'Industrial Trainee',
@@ -57,7 +57,7 @@ const Experience = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            Over the years, I’ve had the opportunity to work on various projects, collaborate with skilled teams, and learn from every experience. From building custom solutions for clients to contributing to open-source projects, my work experience has helped me develop a strong understanding of the web development landscape. I continue to grow with every new challenge.
+                            As a recent graduate, I have focused on building a strong foundation in web development through hands-on projects and internships. My expertise includes working with the MERN stack, creating responsive applications, and solving real-world challenges. During my academic journey and personal projects, I gained experience in developing dynamic user interfaces, integrating APIs, and managing backend systems. While I'm new to the industry, my passion for learning and adapting to new technologies makes me eager to contribute and grow.
                         </motion.p>
                     </div>
                 </section>
@@ -78,7 +78,7 @@ const Experience = () => {
                                     <h3 className="text-xl font-semibold">{experience.title}</h3>
                                     <p className="text-gray-600">{experience.company}</p>
                                     <p className="text-gray-400">{experience.date}</p>
-                                    <p className="mt-2">{experience.description}</p>
+                                    <p className="mt-2 text-justify">{experience.description}</p>
                                 </div>
                             </div>
                         ))}

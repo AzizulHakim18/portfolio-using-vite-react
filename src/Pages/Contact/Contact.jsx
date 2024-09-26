@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import contactAnimation from "../../../public/animation/contact.json"
+import contactAnimation from "../../assets/animation/contact.json"
 import Lottie from 'react-lottie';
 
 const Contact = () => {

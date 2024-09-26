@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FullStack = () => {
 
@@ -21,10 +22,10 @@ const FullStack = () => {
                         </p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
-                                <button className='btn btn-outline'>Server Side</button>
+                                <Link to="https://github.com/AzizulHakim18/burger_shop_client" className='btn btn-outline mx-1'>Client Side</Link>
+                                <Link to="https://github.com/AzizulHakim18/burger_shop_server" className='btn btn-outline'>Server Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://burger-shop-2b5a7.web.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>
@@ -38,10 +39,10 @@ const FullStack = () => {
                         </p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
-                                <button className='btn btn-outline'>Server Side</button>
+                                <Link to="https://github.com/AzizulHakim18/resume-build-ai" className='btn btn-outline mx-1'>Client Side</Link>
+                                <Link to="https://github.com/AzizulHakim18/resume-build-ai-server" className='btn btn-outline'>Server Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://www.youtube.com/watch?v=y9OY2CZD_84&t=138s" target='_blank' className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>

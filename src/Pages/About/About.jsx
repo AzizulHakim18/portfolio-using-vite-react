@@ -1,7 +1,7 @@
 import React from 'react';
-import journeyAnimation from '../../../public/animation/journey.json';
-import skillsAnimation from '../../../public/animation/skills.json';
-import projectsAnimation from '../../../public/animation/projects.json';
+import journeyAnimation from '../../assets/animation/journey.json';
+import skillsAnimation from '../../assets/animation/skills.json';
+import projectsAnimation from '../../assets/animation/projects.json';
 import Lottie from 'react-lottie';
 import { motion } from 'framer-motion';
 

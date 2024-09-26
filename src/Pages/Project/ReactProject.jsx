@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ReactProject = () => {
     return (
@@ -17,9 +18,9 @@ const ReactProject = () => {
                             <span className='text-sm font-bold text-gray-700'>Key Features: </span>This project is built using React JS, Vite, Tailwind CSS, and Three.js for 3D elements, ensuring a visually rich and responsive design. It features dark/light theme toggles, search functionality, and genre filtering. The application integrates with the RAWG API to dynamically fetch and display game listings. With nested components and React hooks, it handles complex component structures. The site is fully responsive, adapting to different screen sizes while incorporating interactive 3D visuals for an enhanced user experience.</p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
+                                <Link to="https://github.com/AzizulHakim18/game_buddy" className='btn btn-outline mx-1'>Client Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://mellow-licorice-634351.netlify.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>
@@ -32,9 +33,9 @@ const ReactProject = () => {
                             <span className='text-sm font-bold text-gray-700'>Key Features: </span>The Ema Jhon website includes a React Router DOM setup for smooth navigation between pages, along with a local storage system for persisting cart data between sessions. Users can view items dynamically displayed in a cart section on the right side of the page. The project implements JSON data to populate the product listings. A dynamic cart system allows users to confirm orders, and once an order is confirmed, items are removed from the cart. The project also utilizes context API for state management across the application, ensuring consistent data flow.</p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
+                                <Link to="https://github.com/AzizulHakim18/ema-jhon-eCommerce" className='btn btn-outline mx-1'>Client Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://heartfelt-chebakia-882c23.netlify.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>
@@ -48,9 +49,9 @@ const ReactProject = () => {
                         </p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
+                                <Link to="https://github.com/AzizulHakim18/cafe_stone" className='btn btn-outline mx-1'>Client Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://cafestone-7769a.web.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>

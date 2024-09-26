@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaBootstrap } from 'react-icons/fa';
-import { SiTailwindcss, SiDaisyui, SiExpress } from 'react-icons/si';
+import { SiTailwindcss, SiDaisyui, SiExpress, SiReactrouter } from 'react-icons/si';
 import { AiFillApi } from 'react-icons/ai';
 import Services from './Services';
 import { IoLogoFirebase } from 'react-icons/io5';
@@ -14,6 +14,7 @@ const skills = [
     { id: 5, icon: <FaJs className="text-4xl text-yellow-500 animate-bounce" />, name: 'JavaScript', description: 'Skilled in writing dynamic and interactive web applications with JavaScript, including ES6+ features and asynchronous programming.' },
     { id: 6, icon: <FaReact className="text-4xl text-blue-400 animate-bounce" />, name: 'React', description: 'Experienced in building user interfaces and single-page applications using React, including hooks, context API, and state management.' },
     { id: 7, icon: <SiDaisyui className="text-4xl text-emerald-600 animate-bounce" />, name: 'Daisy UI', description: 'Skilled in using Daisy UI for component-based styling and creating aesthetically pleasing and responsive designs.' },
+    { id: 7, icon: <SiReactrouter className="text-4xl text-slate-800 animate-bounce" />, name: 'React Router Dom', description: 'React Router DOM enables seamless navigation in single-page applications (SPAs) by managing the routing between components without refreshing the page.' },
     { id: 8, icon: <IoLogoFirebase className="text-4xl text-yellow-400 animate-bounce" />, name: 'Firebase', description: 'Proficient in using Firebase for authentication, real-time databases, and cloud functions to enhance web applications.' },
     { id: 9, icon: <FaNodeJs className="text-4xl text-green-600 animate-bounce" />, name: 'Node.js', description: 'Knowledgeable in server-side development and API integration with Node.js, including creating RESTful services and middleware.' },
     { id: 10, icon: <FaDatabase className="text-4xl text-teal-500 animate-bounce" />, name: 'MongoDB', description: 'Experienced in designing and managing NoSQL databases with MongoDB, including schema design and data modeling.' },
@@ -24,7 +25,7 @@ const skills = [
 const Skills = () => {
     return (
         <div className='w-11/12 md:w-2/3 mx-auto'>
-            <section className="py-12">
+            <section className="py-3">
                 <div className="container mx-auto px-4">
                     <section >
                         <div className="py-3 text-center">
@@ -34,7 +35,7 @@ const Skills = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                My Expertise
+                                My Skills
                             </motion.h2>
                             <motion.p
                                 className="max-w-2xl mx-auto  leading-relaxed text-justify"

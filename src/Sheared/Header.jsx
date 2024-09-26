@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Header = () => {
+
+
+
+
     return (
-        <div className="navbar bg-transparent shadow-lg  sticky top-0 z-10">
+        <div className="navbar bg-slate-100 shadow-lg  sticky top-0 z-30">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +25,7 @@ const Header = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-slate-100 rounded-box z-[1] mt-3 w-28 p-2 shadow">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/skill">Skill</Link></li>

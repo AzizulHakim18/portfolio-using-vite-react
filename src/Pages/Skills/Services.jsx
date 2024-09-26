@@ -24,7 +24,7 @@ const Services = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            My Service
+                            My Services
                         </motion.h2>
                         <motion.p
                             className="max-w-2xl mx-auto  leading-relaxed text-justify"

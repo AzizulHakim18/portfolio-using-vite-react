@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BeginerProject = () => {
     return (
@@ -18,9 +19,9 @@ const BeginerProject = () => {
                         </p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
+                                <Link to="https://github.com/AzizulHakim18/CountDown" className='btn btn-outline mx-1'>Client Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://glittery-sherbet-6d33d9.netlify.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>
@@ -34,9 +35,9 @@ const BeginerProject = () => {
                         </p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
+                                <Link to="https://github.com/AzizulHakim18/particle" className='btn btn-outline mx-1'>Client Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://brilliant-biscochitos-91a6d9.netlify.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>
@@ -50,9 +51,9 @@ const BeginerProject = () => {
                         </p>
                         <div className='flex justify-between'>
                             <div>
-                                <button className='btn btn-outline mx-1'>Client Side</button>
+                                <Link to="https://github.com/AzizulHakim18/money-bank" className='btn btn-outline mx-1'>Client Side</Link>
                             </div>
-                            <button className='btn btn-outline'>Preview</button>
+                            <Link to="https://stalwart-centaur-0bd303.netlify.app/" className='btn btn-outline'>Preview</Link>
                         </div>
                     </div>
                 </div>

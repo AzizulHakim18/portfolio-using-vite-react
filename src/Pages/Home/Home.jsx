@@ -24,23 +24,23 @@ const Home = () => {
                     <h3 className="text-lg">Frontend Developer with expertise in MERN stack development.</h3>
                     <p className='text-justify'>With a background in Petroleum and Mining Engineering, I bring a unique perspective to web development, blending technical precision with creativity. My journey in web development began with a passion for creating user friendly, responsive websites and applications. I’ve honed my skills in the MERN stack, building full-stack projects that are both functional and scalable. I’m committed to continuous learning and strive to integrate new technologies into my work.</p>
                     <div className="flex justify-center lg:justify-start space-x-4">
-                        <Link to="#hire" className="btn btn-outline rounded-s-lg">Hire Me</Link>
-                        <Link to="#download" className="btn btn-outline">Download CV</Link>
+                        <Link to="/contact" className="btn btn-outline rounded-s-lg">Hire Me</Link>
+                        <a href="../../assets/Azizul _Hakim_Rony_Resume(updated).pdf" download="Azizul _Hakim_Rony_Resume.pdf" className="btn btn-outline">Download CV</a>
                     </div>
 
                     {/* Social Icons */}
                     <div className="flex justify-center lg:justify-start space-x-4 mt-4">
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaLinkedin /></Link>
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><IoLogoGithub /></Link>
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaFacebook /></Link>
-                        <Link to="#" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaInstagram /></Link>
+                        <Link to="https://www.linkedin.com/in/azizul-hakim-9757bb228/" target="_blank" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaLinkedin /></Link>
+                        <Link to="https://github.com/AzizulHakim18" target="_blank" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><IoLogoGithub /></Link>
+                        <Link to="https://www.facebook.com/profile.php?id=100077263034519" target="_blank" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaFacebook /></Link>
+                        <Link to="https://www.instagram.com/asgardian_godzz/" target="_blank" className="text-xl border rounded-full border-zinc-900 hover:border-slate-500 p-2 hover:bg-slate-900 hover:text-white shadow-lg hover:shadow-slate-500 transition-transform duration-300 ease-in-out transform hover:scale-110"><FaInstagram /></Link>
                     </div>
                 </div>
 
-            </section>
+            </section >
 
 
-        </div>
+        </div >
     );
 };
 
