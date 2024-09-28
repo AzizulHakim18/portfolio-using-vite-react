@@ -25,7 +25,7 @@ const Home = () => {
                     <p className='text-justify'>With a background in Petroleum and Mining Engineering, I bring a unique perspective to web development, blending technical precision with creativity. My journey in web development began with a passion for creating user friendly, responsive websites and applications. I’ve honed my skills in the MERN stack, building full-stack projects that are both functional and scalable. I’m committed to continuous learning and strive to integrate new technologies into my work.</p>
                     <div className="flex justify-center lg:justify-start space-x-4">
                         <Link to="/contact" className="btn btn-outline rounded-s-lg">Hire Me</Link>
-                        <a href="../../assets/Azizul _Hakim_Rony_Resume(updated).pdf" download="Azizul _Hakim_Rony_Resume.pdf" className="btn btn-outline">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1vlOSP4MBA-c1NebKCJlCe0Jjs_esyCKf/view?usp=sharing" download="Azizul_Hakim_Rony_Resume.pdf" className="btn btn-outline">Download CV</a>
                     </div>
 
                     {/* Social Icons */}
